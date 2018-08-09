@@ -1,24 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Alice Queen21 View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AliceQueen21ViewController" customModule="blackjack21_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alice wall paper" translatesAutoresizingMaskIntoConstraints="NO" id="y9L-wJ-9TE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alicescore" translatesAutoresizingMaskIntoConstraints="NO" id="jkA-mO-2Sa">
+                                <rect key="frame" x="20" y="341" width="153" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queenscore" translatesAutoresizingMaskIntoConstraints="NO" id="w5S-D8-jxM">
+                                <rect key="frame" x="20" y="79" width="153" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alicescore" translatesAutoresizingMaskIntoConstraints="NO" id="Ixp-rU-mhj">
+                                <rect key="frame" x="225" y="341" width="153" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queenscore" translatesAutoresizingMaskIntoConstraints="NO" id="kWk-sh-knY">
+                                <rect key="frame" x="225" y="79" width="153" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JvY-K7-1v6" userLabel="card1">
+                                <rect key="frame" x="20" y="464" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aliceCover" translatesAutoresizingMaskIntoConstraints="NO" id="Wl1-EO-89H" userLabel="card2">
+                                <rect key="frame" x="98" y="464" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aliceCover" translatesAutoresizingMaskIntoConstraints="NO" id="Pj2-5p-zTc" userLabel="card3">
+                                <rect key="frame" x="173" y="464" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aliceCover" translatesAutoresizingMaskIntoConstraints="NO" id="m7p-09-N53" userLabel="card4">
+                                <rect key="frame" x="251" y="464" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aliceCover" translatesAutoresizingMaskIntoConstraints="NO" id="KSN-cB-EyB" userLabel="card5">
+                                <rect key="frame" x="329" y="464" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0h-3j-eUM" userLabel="card6">
+                                <rect key="frame" x="17" y="196" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queenCover" translatesAutoresizingMaskIntoConstraints="NO" id="02k-Ue-aFP" userLabel="card7">
+                                <rect key="frame" x="95" y="196" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queenCover" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-Dp-vQY" userLabel="card8">
+                                <rect key="frame" x="173" y="196" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queenCover" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-xR-hO3" userLabel="card9">
+                                <rect key="frame" x="251" y="196" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queenCover" translatesAutoresizingMaskIntoConstraints="NO" id="vD5-3b-PyC" userLabel="card10">
+                                <rect key="frame" x="329" y="196" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="queenCover1" translatesAutoresizingMaskIntoConstraints="NO" id="G5f-20-8r2" userLabel="queenCover">
+                                <rect key="frame" x="17" y="196" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aliceCover1" translatesAutoresizingMaskIntoConstraints="NO" id="wQB-Q4-lbY" userLabel="aliceCover">
+                                <rect key="frame" x="20" y="464" width="70" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSU-R7-xan">
+                                <rect key="frame" x="115" y="612" width="95" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hit" image="alice hit"/>
+                                <connections>
+                                    <action selector="hitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pa1-RI-jae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUX-SR-eOt">
+                                <rect key="frame" x="218" y="612" width="95" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="alice open"/>
+                                <connections>
+                                    <action selector="openBTNPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="677-EL-3hf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9X6-47-JHc">
+                                <rect key="frame" x="20" y="612" width="95" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Deal" image="alice deal"/>
+                                <connections>
+                                    <action selector="dealAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UjL-DD-4yA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hz-Mx-Jhe">
+                                <rect key="frame" x="77" y="358" width="76" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-Zx-lap">
+                                <rect key="frame" x="39" y="79" width="76" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$500" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjP-ix-H69">
+                                <rect key="frame" x="245" y="79" width="83" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$500" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mR-VF-rjs">
+                                <rect key="frame" x="281" y="343" width="74" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-yg-EDW">
+                                <rect key="frame" x="317" y="612" width="95" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="alice again"/>
+                                <connections>
+                                    <action selector="playagainAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJv-rc-AaI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="aliceChipLabel" destination="3mR-VF-rjs" id="3fA-wi-VrI"/>
+                        <outlet property="aliceCover" destination="wQB-Q4-lbY" id="W5o-09-QK8"/>
+                        <outlet property="aliceScoreLabel" destination="7hz-Mx-Jhe" id="aTp-Ln-Hwe"/>
+                        <outlet property="card1" destination="JvY-K7-1v6" id="SKS-4P-aEW"/>
+                        <outlet property="card10" destination="vD5-3b-PyC" id="yUG-h0-E4t"/>
+                        <outlet property="card2" destination="Wl1-EO-89H" id="88t-MP-8Yu"/>
+                        <outlet property="card3" destination="Pj2-5p-zTc" id="oXC-IE-Nru"/>
+                        <outlet property="card4" destination="m7p-09-N53" id="VvK-58-AJx"/>
+                        <outlet property="card5" destination="KSN-cB-EyB" id="6ds-m4-5GQ"/>
+                        <outlet property="card6" destination="f0h-3j-eUM" id="lor-9g-Hdg"/>
+                        <outlet property="card7" destination="02k-Ue-aFP" id="4ID-8h-k2K"/>
+                        <outlet property="card8" destination="CuU-Dp-vQY" id="RCr-Jx-bAL"/>
+                        <outlet property="card9" destination="a3c-xR-hO3" id="Gmo-IB-sqZ"/>
+                        <outlet property="dealBTN" destination="9X6-47-JHc" id="2Jt-Vn-Tl9"/>
+                        <outlet property="hitBTN" destination="gSU-R7-xan" id="9Lf-MO-zFQ"/>
+                        <outlet property="openBTN" destination="tUX-SR-eOt" id="r4J-se-5IQ"/>
+                        <outlet property="playagain" destination="K5n-yg-EDW" id="c34-vV-wbx"/>
+                        <outlet property="queenChipLabel" destination="yjP-ix-H69" id="0CR-pK-KWV"/>
+                        <outlet property="queenCover" destination="G5f-20-8r2" id="Q3d-fq-zi3"/>
+                        <outlet property="queenScoreLabel" destination="YLt-Zx-lap" id="ooh-0o-6J1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-5126" y="-1393"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alice again" width="252" height="141"/>
+        <image name="alice deal" width="252" height="141"/>
+        <image name="alice hit" width="252" height="141"/>
+        <image name="alice open" width="252" height="141"/>
+        <image name="alice wall paper" width="1280" height="1810"/>
+        <image name="aliceCover" width="1841" height="2448"/>
+        <image name="aliceCover1" width="1841" height="2448"/>
+        <image name="alicescore" width="658" height="514"/>
+        <image name="queenCover" width="1841" height="2448"/>
+        <image name="queenCover1" width="1841" height="2448"/>
+        <image name="queenscore" width="661" height="519"/>
+    </resources>
 </document>
